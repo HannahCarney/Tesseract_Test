@@ -88,7 +88,7 @@ module.exports = function(context) {
                       clearTimeout(changesTimeout);
                     }
                     changesTimeout = setTimeout(function(){
-                      context.cordova.build().then(function() {
+                      context.cordova.prepare().then(function() {
                           patcher.addCSP({
                               index: options.index,
                               servers: serversFromCallback, //need this for building proper CSP

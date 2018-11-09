@@ -1,13 +1,23 @@
 import React, { Component } from 'react';
+import OCR from './components/tesseract.js'
+import image from './example_license2.jpg'
+
+
 import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+  state = {
+
+  }
+
   render() {
+
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+        <OCR example={image} ></OCR>
+          {/* <img src={logo} className="App-logo" alt="logo" />
           <p>
             Edit <code>src/App.js</code> j
           </p>
@@ -15,11 +25,9 @@ class App extends Component {
             className="App-link"
             href="https://reactjs.org"
             target="_blank"
-            rel="noopener noreferrer"
-          >
-          
+            rel="noopener noreferrer">
 
-          </a>
+          </a> */}
         </header>
       </div>
     );

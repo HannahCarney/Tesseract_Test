@@ -16,8 +16,6 @@
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
     <hook src="scripts/npmInstall.js" type="after_plugin_install" />
-    <hook src="scripts/after_prepare.js" type="after_prepare" />
-    <hook src="scripts/build.js" type="before_prepare" />
     <hook src="scripts/run.js" type="after_run" />
     <platform name="android">
         <hook src="scripts/run.js" type="after_run" />
@@ -31,5 +29,5 @@
     <plugin name="cordova-plugin-whitelist" spec="1" />
     <engine name="browser" spec="^5.0.4" />
     <engine name="android" spec="^7.1.1" />
-    <engine name="ios" spec="^4.5.5" />
+    <engine name="ios" spec="~4.5.5" />
 </widget>

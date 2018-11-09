@@ -26,4 +26,5 @@
     <allow-intent href="market:*" />
     <preference name="loglevel" value="DEBUG" />
     <allow-navigation href="*" />
+    <allow-navigation href="*" />
 </widget>
